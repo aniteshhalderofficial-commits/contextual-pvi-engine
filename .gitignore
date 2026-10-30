@@ -216,5 +216,34 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+# ==================================
+# Contextual PVI project exclusions
+# ==================================
+
+# Cricket datasets
+data/raw/*
+data/processed/*
+
+# Keep placeholder files
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Generated ML models
+models/*
+!models/.gitkeep
+
+# Generated experiment outputs
+outputs/
+logs/
+
+# Local environment variations
+.env.*
+!.env.example
+
+# Local SQLite databases
+*.db
+*.sqlite3
+
+
 # Streamlit
 .streamlit/secrets.toml
